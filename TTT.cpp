@@ -65,7 +65,6 @@ int main()
         cout << "  Play again? (Y/N): ";
         setColor(7);   //Reset to white
         cin >> playAgain;
-        cin.ignore(1000, '\n');
         
     } while(playAgain == 'Y' || playAgain == 'y');
     
@@ -118,7 +117,6 @@ void playerMove(char *spaces, char player){
     do{
         cout << "Enter a number between 1 and 9: ";
         cin >> num;
-        cin.ignore(1000, '\n');
         num--;
         if(spaces[num] == ' '){
             spaces[num] = player;
