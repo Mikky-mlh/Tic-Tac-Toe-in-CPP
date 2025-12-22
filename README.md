@@ -118,6 +118,7 @@ TicTacToe.exe
 Tic-Tac-Toe-in-CPP/
 │
 ├── 📄 TTT.cpp              # Main game logic and console rendering
+├── 🎮 TicTacToe.exe        # Windows executable (ready to play)
 ├── 📖 README.md            # Project documentation
 └── 📜 LICENSE              # MIT License
 ```
