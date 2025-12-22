@@ -4,7 +4,7 @@
 
 ### A classic two-player strategy game with colorful console graphics
 
-[![Play Now](https://img.shields.io/badge/🎮_Play-Now-ff4444?style=for-the-badge&logo=cplusplus&logoColor=white)](https://github.com/Mikky-mlh/Tic-Tac-Toe-in-CPP)
+[![Play Now](https://img.shields.io/badge/🎮_Play-Now-ff4444?style=for-the-badge&logo=cplusplus&logoColor=white)](https://github.com/Mikky-mlh/Tic-Tac-Toe-in-CPP/raw/main/TTT.exe)
 [![License](https://img.shields.io/badge/📜_License-MIT-0080ff?style=for-the-badge)](./LICENSE)
 [![C++](https://img.shields.io/badge/C++-11+-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)](https://isocpp.org/)
 
@@ -22,6 +22,7 @@
 - [Tech Stack](#-tech-stack)
 - [Installation](#-installation)
 - [How to Play](#-how-to-play)
+- [What I Learned](#-what-i-learned)
 - [Project Structure](#-project-structure)
 - [Future Improvements](#-future-improvements)
 - [Connect](#-connect)
@@ -112,6 +113,20 @@ TicTacToe.exe
 
 ---
 
+## 📚 What I Learned
+
+My first C++ game project, teaching me:
+- **Windows Console API** - Using `windows.h` for color manipulation with `SetConsoleTextAttribute()`
+- **Console Graphics** - Drawing game boards with ASCII characters and colors
+- **Game Logic Patterns** - Win condition checking across 8 possible lines (3 rows, 3 columns, 2 diagonals)
+- **Random Number Generation** - Using `rand()` and `srand(time(0))` for AI opponent
+- **Input Validation** - Ensuring moves are valid before accepting them
+- **Game Loop Structure** - Managing turns, checking win/draw conditions, restart functionality
+
+**Platform Note:** This uses Windows-specific APIs (`windows.h`), making it Windows-only. Future versions could use cross-platform libraries like ncurses (Linux/Mac terminal graphics library) for portability.
+
+---
+
 ## 📂 Project Structure
 
 ```
@@ -136,13 +151,14 @@ Tic-Tac-Toe-in-CPP/
 
 ## 🔮 Future Improvements
 
-- 🖱️ **Mouse Click Support** - Click-to-play functionality
-- 🧠 **Smarter AI** - Minimax algorithm implementation
+Planned enhancements:
+- 🖱️ **Mouse Click Support** - Exploring Win32 API mouse events or transitioning to SDL2/SFML (game development libraries that handle graphics and input)
+- 🧠 **Minimax AI** - Unbeatable AI using minimax algorithm (AI decision-making algorithm that evaluates all possible moves)
 - 🎮 **Two-Player Mode** - Human vs Human option
-- 💾 **Score Tracking** - Win/loss statistics
-- 🌈 **Cross-Platform** - Linux/macOS support
+- 💾 **Score Tracking** - Persistent win/loss statistics
+- 🌈 **Cross-Platform** - Port to ncurses for Linux/macOS support
 
-> **Note:** Currently exploring ways to add mouse click functionality in C++. Contributions welcome!
+> **Note:** Current implementation uses Windows-specific console APIs. Cross-platform version would require rewrite using portable libraries.
 
 ---
 
